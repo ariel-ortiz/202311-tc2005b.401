@@ -1,0 +1,15 @@
+body {
+  margin: 50px;
+  background-color: rgb(255, 0, 0);
+}
+
+.mis_cuates {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#maria {
+  background-color: yellow;
+  color: blue;
+}
