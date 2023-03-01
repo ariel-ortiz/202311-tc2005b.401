@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Máximo común divisor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="gcd.js" defer></script>
+  </head>
+  <body class="w3-container w3-sand">
+    <h1>Máximo común divisor</h1>
+
+    <div id="entradas">
+
+      <p>
+        <label for="entrada1">Entrada 1:</label>
+        <input id="entrada1" type="text" class="w3-input">
+      </p>
+
+      <p>
+        <label for="entrada2">Entrada 2:</label>
+        <input id="entrada2" type="text" class="w3-input">
+      </p>
+
+      <button class="w3-btn w3-black w3-round-large" onclick="calcular_gcd()">
+        Calcular MCD
+      </button>
+
+    </div>
+
+    <div id="salida" style="display: none">
+      <h2 id="resultado"></h2>
+      <a href="" class="w3-btn w3-black w3-round-large">
+        ¡Otra vez!
+      </a>
+    </div>
+
+  </body>
+</html>
