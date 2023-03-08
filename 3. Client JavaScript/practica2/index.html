@@ -11,11 +11,19 @@
   <body class="w3-container w3-green">
     <h1>Carta Secreta</h1>
     <div class="w3-panel">
-      <img id="la_carta" class="carta" src="cards/H_12.svg">
-      <!-- <img class="carta" src="cards/BACK.svg"> -->
+      <img id="laCarta" class="carta" src="cards/BACK.svg">
       <p>
-        <button class="w3-btn w3-blue w3-round-large">Púshale</button>
+        Quedan <span id="contador">52</span> cartas.
       </p>
+      <p id="miBoton">
+        <button onclick="descubreCarta();"
+                class="w3-btn w3-blue w3-round-large">
+          Púshale
+        </button>
+      </p>
+    </div>
+    <div id="reiniciar" class="w3-panel" style="display: none;">
+      <a class="w3-btn w3-blue w3-round-large" href="">Reiniciar</a>
     </div>
   </body>
 </html>
