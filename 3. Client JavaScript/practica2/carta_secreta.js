@@ -23,10 +23,12 @@ function shuffle(a) {
   }
 }
 
+/* global contador laCarta miBoton reiniciar */
+
 function descubreCarta() {
   if (cartas.length > 0) {
     let carta = cartas.pop();
-    contador.innerText = cartas.length.toString();
+    contador.innerText = cartas.length.toString() + ' \u{2620}';
     laCarta.src = 'cards/' + carta;
   } else {
     miBoton.style.display = 'none';
