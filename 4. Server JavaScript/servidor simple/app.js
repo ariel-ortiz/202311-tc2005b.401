@@ -4,6 +4,8 @@ const app = express();
 const port = 8080;
 const ipAddr = '34.230.161.23';
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
   res.type('text/plain');
   res.status(200);
