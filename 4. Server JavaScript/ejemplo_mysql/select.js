@@ -18,14 +18,17 @@ connection.connect(err => {
 });
 
 function do_select() {
-  let sql = 'select * from quotations where author = "Anonymous"';
+  let sql = 'select author, excerpt from quotations order by author';
   connection.query(
     sql,
     (err, result) => {
       if (err) {
         throw err;
       } else {
-        console.log(result);
+        // console.log(result);
+        for (let row of result) {
+          console.log(row.author, row.excerpt);
+        }
         connection.end();
       }
     }
