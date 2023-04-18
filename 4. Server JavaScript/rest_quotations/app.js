@@ -33,7 +33,7 @@ app.get('/quotations', (req, res) => {
         result.push({
            id: row.id,
            author: row.author,
-           prelude: row.excerpt.split(' ').slice(0, 3).join(' ') + '...',
+           prelude: row.excerpt?.split(' ').slice(0, 3).join(' ') + '...',
            url: `http://${ipAddr}:${port}/quotations/${row.id}`
         });
       }
